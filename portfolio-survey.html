@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Matt McHugh's Portfolio Survey</title>
+    <link href="./survey_style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Portfolio Survey</h1>
+      <p id="description">
+        This is a short survey I built to demonstrate my knowledge of HTML and
+        CSS. I created it mostly as a demonstration of HTML input elements, but it is a working survey
+        and I do receive the responses if you leave feedback. Thank you for taking the time to 
+        view it.
+      </p>
+      <dev>
+        <form id="survey-form">
+          <label id="name-label" for="name">Name:</label
+          ><input
+            id="name"
+            type="text"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+          <label id="email-label" for="email">Email:</label
+          ><input
+            id="email"
+            type="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+          <label id="number-label" for="number"
+            >How many years in the field do you have:</label
+          ><input
+            id="number"
+            type="number"
+            min="0"
+            max="100"
+            placeholder="Enter how many years(optional)"
+          />
+          <div class="dropdown">
+            <label id="dropdown-label" for="dropdown"
+              >Which section of my portfolio do you consider to be the
+              strongest?
+            </label>
+            <select
+              id="dropdown"
+              type="dropdown"
+              name="portfolio_section"
+              required
+            >
+              <option disabled selected value>Select section</option>
+              <option value="HTML_CSS">HTML & CSS</option>
+              <option value="Javascript">Javascript</option>
+            </select>
+          </div>
+          <div class="radio">
+            <p>
+              Based on the porfolio, would you invite me to interview if you
+              were hiring for a junior developer position?
+            </p>
+            <div class="radio" id="yes">
+              <label id="radio-label" for="radio_yes">Yes</label>
+              <input
+                name="invitation-interview"
+                id="radio_yes"
+                value="Yes"
+                type="radio"
+                class="input-radio"
+                checked
+              />
+            </div>
+            <div class="radio" id="no">
+              <label id="radio-label" for="radio_no">No</label>
+              <input
+                name="invitation-interview"
+                id="radio_no"
+                value="No"
+                type="radio"
+                class="input-radio"
+              />
+            </div>
+            <div class="radio" id="maybe">
+              <label id="radio-label" for="radio_maybe">Maybe</label>
+              <input
+                name="invitation-interview"
+                id="radio_maybe"
+                value="Maybe"
+                type="radio"
+                class="input-radio"
+              />
+            </div>
+          </div>
+          <div class="checkbox">
+            <p>What skills do you think I need to showcase more in this portfolio?</p>
+            <div>
+              <label>
+              <input
+                name="prefer"
+                value="front-end"
+                type="checkbox"
+                class="input-checkbox"
+              />Front-end</label>
+            </div>
+            <div>
+              <label>
+              <input
+                name="prefer"
+                value="back-end"
+                type="checkbox"
+                class="input-checkbox"
+              />Back-end</label>
+            </div>
+            <div>
+                <label>
+                <input
+                  name="prefer"
+                  value="projects"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Projects</label>
+              </div>
+          </div>
+          <div class="feeback">
+            <p>Any feedback on areas that I could improve is welcome</p>
+            <textarea
+              id="feedback"
+              class="feedback"
+              name="feedback"
+              placeholder="Leave your feedback here..."
+            >
+            </textarea>
+          </div>
+          <div>
+            <button type=submit" id="submit" class="submit-button">
+              Submit
+            </submit>
+          </div>
+        </form>
+      </dev>
+    </main>
+  </body>
+</html>
