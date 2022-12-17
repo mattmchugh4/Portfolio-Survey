@@ -8,39 +8,36 @@
   </head>
   <body>
     <main>
-      <h1 id="title">Portfolio Survey</h1>
+      <h1 id="title">Matt McHugh's Portfolio Survey</h1>
       <p id="description">
         This is a short survey I built to demonstrate my knowledge of HTML and
         CSS. I created it mostly as a demonstration of HTML input elements, but it is a working survey
         and I do receive the responses if you leave feedback. Thank you for taking the time to 
         view it.
       </p>
-      <dev>
+      <div class="form-container">
         <form id="survey-form">
-          <label id="name-label" for="name">Name:</label
+          <label class="text-label" id="name-label" for="name">Name: (required)</label
           ><input
             id="name"
             type="text"
             class="form-control"
-            placeholder="Enter your name"
+            placeholder="Enter your name (required)"
             required
           />
-          <label id="email-label" for="email">Email:</label
+          <label class="text-label" for="email">Email:</label
           ><input
             id="email"
             type="email"
             class="form-control"
-            placeholder="Enter your email"
+            placeholder="Enter your email (required)"
             required
           />
-          <label id="number-label" for="number"
-            >How many years in the field do you have:</label
+          <label class="text-label" for="company">What company are you with?</label
           ><input
-            id="number"
-            type="number"
-            min="0"
-            max="100"
-            placeholder="Enter how many years(optional)"
+            id="company"
+            type="text"
+            placeholder="Enter your company (optional)"
           />
           <div class="dropdown">
             <label id="dropdown-label" for="dropdown"
@@ -56,6 +53,8 @@
               <option disabled selected value>Select section</option>
               <option value="HTML_CSS">HTML & CSS</option>
               <option value="Javascript">Javascript</option>
+              <option value="Javascript">Java</option>
+              <option value="Javascript">Python</option>
             </select>
           </div>
           <div class="radio">
@@ -126,14 +125,13 @@
               </div>
           </div>
           <div class="feeback">
-            <p>Any feedback on areas that I could improve is welcome</p>
+            <p>Do you have any feedback on areas that I could improve on?</p>
             <textarea
               id="feedback"
               class="feedback"
               name="feedback"
               placeholder="Leave your feedback here..."
-            >
-            </textarea>
+            ></textarea>
           </div>
           <div>
             <button type=submit" id="submit" class="submit-button">
@@ -141,7 +139,7 @@
             </submit>
           </div>
         </form>
-      </dev>
+      </div>
     </main>
   </body>
 </html>
